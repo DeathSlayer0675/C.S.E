@@ -1,16 +1,20 @@
 import random
 
-n = random.randint(1, 10)
-guess = int(raw_input("Enter an integer from 1 to 10: "))
+myname = input('Hello, what is your name?')
+print('Well', myname, 'am thinking of a number between 1 and 50')
+number = random.randint(1, 50)
+guess = 0
+while guess < 4:
+      guess_number = int(input('Enter a number:'))
+      guess += 1
+if guess_number < number:
+ print("Your guess is to low")
 
-while n != "Guess":
+if guess_number > number:
+ print("Your guess is to high")
 
-    raw_input = 
-    if guess < n:
-        print("Higher")
-        guess = int(raw_input("Enter an integer from 1 to 10: "))
-    elif guess > n:
-        print("Lower")
-        guess = int(raw_input("Enter an integer from 1 to 10: "))
-    else:
-        print("You guessed it!")
+if guess_number == number:
+ print("Your guess is correct the number is", (number))
+
+if guess == 4:
+ print("The number I was thinking of is", (number))
