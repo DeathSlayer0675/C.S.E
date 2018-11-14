@@ -8,10 +8,10 @@ while guess < 4:
       guess_number = int(input('Enter a number:'))
       guess += 1
 if guess_number < number:
- print("Your guess is to low")
+ print("Your guess is too low")
 
 if guess_number > number:
- print("Your guess is to high")
+ print("Your guess is too high")
 
 if guess_number == number:
  print("Your guess is correct the number is", (number))
