@@ -1,20 +1,17 @@
-import random
+number = 7
+guesses = 5
+win = False
 
-myname = input('Hello, what is your name?')
-print('Well', myname, 'am thinking of a number between 1 and 50')
-number = random.randint(1, 50)
-guess = 0
-while guess < 4:
-      guess_number = int(input('Enter a number:'))
-      guess += 1
-if guess_number < number:
- print("Your guess is too low")
-
-if guess_number > number:
- print("Your guess is too high")
-
-if guess_number == number:
- print("Your guess is correct the number is", (number))
-
-if guess == 4:
- print("The number I was thinking of is", (number))
+while guesses > 0:
+    num = int(input("Pick a number between 1 and 10."))
+    if num > 10:
+        print("Your number is too high!")
+    elif num > number:
+        print("The number is lower!")
+        guesses = guesses - 1
+    elif num < number:
+        print("the number is higher!")
+        guesses = guesses - 1
+    elif num == number:
+        print("Correct! ")
+        guesses = 0
