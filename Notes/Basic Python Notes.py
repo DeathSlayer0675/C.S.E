@@ -66,10 +66,10 @@ Anything between the "s is not run.
 def say_it():
     print("Hello World!")
 
-say_it()
-say_it()
-say_it()
 
+say_it()
+say_it()
+say_it()
 
 
 # f(x) = 2x + 3
@@ -81,9 +81,10 @@ f(1)
 f(5)
 f(5000)
 
-#Distance Formula
+# Distance Formula
 
-def distance(x1, y1, x2, y2) :
+
+def distance(x1, y1, x2, y2):
     dist = ((x2 - x1)**2 + (y2 - y1)**2)**(1/2)
     print(dist)
 
@@ -96,12 +97,12 @@ for i in range(5):
     say_it()
 
 for i in range(10):
-    print (i + 1)
+    print(i + 1)
 
 for i in range(5):
     f(i)
 
-#While loops
+# While loops
 a = 0
 while a < 10:
     print(a)
@@ -137,16 +138,18 @@ your_grade = grade_calc(82)
 print(your_grade)
 
 # "Random" Notes
-import random # This should be on line 1
+import random  # This should be on line 1
 print(random.randint(1, 10))
 
-
 # Equality Statements
-print (5 > 3)
+print(5 > 3)
 print(5 >= 3)
 print(3 == 3)
 print(3 != 4)
 """
 a = 3 # A is set to 3
-a ==3 # Is a equal to 3?
+a == 3 # Is a equal to 3?
 """
+
+
+
