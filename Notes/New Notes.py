@@ -79,7 +79,5 @@ For character in list1:
         current_index = list1.index(character)
         list1.pop(current_index)
         list1.insert(current_index, "*")
-
-
 '''
 
