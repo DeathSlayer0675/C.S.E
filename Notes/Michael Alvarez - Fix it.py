@@ -49,7 +49,7 @@ print(f"We'd have {beans} beans, {jars} jars, and {crates} crates.")
 startpoint = start_point / 10
 
 print("We can also do that this way:")
-formula = secret_formula(startpoint)
+formula = secret_formula(startpoint)+''
 # This is an easy way to apply a list to a format string
 print("We'd have {} beans, {} jars, and {} crates.".format(*formula))
 
