@@ -8,7 +8,8 @@ name1 = challenge1("Michael", "Alvarez")
 print(name1)
 
 # Challenge 2
-def challenge2()
+def challenge2():
+    return
 # Challenge 3
 
 # Challenge 4

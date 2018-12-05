@@ -70,14 +70,14 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="43" />
-          <entry key="Python" value="8954" />
+          <entry key="Python" value="8982" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="43" />
-          <entry key="py" value="8954" />
+          <entry key="py" value="8982" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -92,13 +92,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Michael Alvarez - Challenges.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state>
+              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
               <folding>
-                <marker date="1544031426427" expanded="true" signature="53:138" ph="..." />
+                <marker date="1544031928732" expanded="true" signature="53:138" ph="..." />
+                <marker date="1544031928732" expanded="true" signature="183:195" ph="..." />
               </folding>
             </state>
           </provider>
@@ -118,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/New Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="210">
               <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <marker date="1543856424096" expanded="true" signature="2150:2155" ph="..." />
@@ -479,9 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Michael Alvarez - Hangman.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Michael Alvarez - Fix it.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -489,22 +487,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/New Notes.py">
+    <entry file="file://$PROJECT_DIR$/Michael Alvarez - Challenges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
           <folding>
-            <marker date="1543856424096" expanded="true" signature="2150:2155" ph="..." />
+            <marker date="1544031928732" expanded="true" signature="53:138" ph="..." />
+            <marker date="1544031928732" expanded="true" signature="183:195" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Michael Alvarez - Challenges.py">
+    <entry file="file://$PROJECT_DIR$/Michael Alvarez - Hangman.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/New Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="210">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
           <folding>
-            <marker date="1544031426427" expanded="true" signature="53:138" ph="..." />
+            <marker date="1543856424096" expanded="true" signature="2150:2155" ph="..." />
           </folding>
         </state>
       </provider>
