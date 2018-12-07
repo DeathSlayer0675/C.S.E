@@ -21,17 +21,16 @@ area = b*h/2
 
 print("area = ", area)
 # Challenge 4
-
 num = float(input("Enter a number: "))
 if num > 0:
-   print("Positive number")
+    print("Positive number")
 elif num == 0:
-   print("Zero")
+    print("Zero")
 else:
-   print("Negative number")
+    print("Negative number")
 # Challenge 5
 r = 3
-area = 3.141592653589793238246*r**2
+area = 3.14*r**2
 print(area)
 
 # Challenge 6
@@ -43,3 +42,26 @@ print(volume)
 n = 3
 value = n + (n * n) + (n * n * n)
 print(value)
+
+# Challenge 8
+
+
+def near_thousand(x):
+    return (abs(1000 - x) <= 100) or (abs(2000 - x) <= 100)
+
+
+print(near_thousand(1000))
+print(near_thousand(900))
+print(near_thousand(800))
+print(near_thousand(2200))
+
+# Challenge 9
+
+
+def is_vowel(char):
+    all_vowels = 'aeiou'
+    return char in all_vowels
+
+
+print(is_vowel('c'))
+print(is_vowel('e'))
