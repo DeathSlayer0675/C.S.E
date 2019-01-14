@@ -1,8 +1,7 @@
 import random
-word = ['sphinx', 'concatenation', 'pharaoh', 'liaison', 'nugget',
-        'yacht', 'conscience', 'playwright', 'nightmare', 'handkerchief']
+word_list = ['sphinx', 'concatenation', 'pharaoh', 'liaison', 'nugget',
+             'yacht', 'conscience', 'playwright', 'nightmare', 'handkerchief']
 
-print(random.choice(word))
+output = []
 
-
-
+print(random.choice(word_list))
