@@ -9,7 +9,7 @@ guesses = 8
 while guesses > 0:
     # Generate the hidden word
     output = []
-    
+
     # Ask for input
     guess = input("Guess a letter: ")
     letters_guessed.append(guess)
