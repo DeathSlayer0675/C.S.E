@@ -4,21 +4,16 @@ import sys
 
 word_list = ['sphinx', 'concatenation', 'pharaoh', 'liaison', 'nugget',
              'yacht', 'conscience', 'playwright', 'nightmare', 'handkerchief']
-word = random.choice(word_list)
-import random
-import sys
-
 
 guess_word = []
-secretWord = random.choice(word_list) # lets randomize single word from the list
+secretWord = random.choice(word_list)
 length_word = len(secretWord)
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet = ("abcdefghijklmnopqrstuvwxyz")
 letter_storage = []
 
 
-
 def beginning():
-    print("Hello Mate!\n")
+    print("Hello Beaner!\n")
 
     while True:
         name = input("Please enter Your name\n").strip()
@@ -28,31 +23,28 @@ def beginning():
         else:
             break
 
-beginning()
 
+beginning()
 
 
 def newfunc():
     print("Well, that's perfect moment to play some Hangman!\n")
 
     while True:
-        gameChoice = input("Would You?\n").upper()
+        gamechoice = input("Would You?\n").upper()
 
-        if gameChoice == "YES" or gameChoice == "Y":
+        if gamechoice == "YES" or gamechoice == "Y":
             break
-        elif gameChoice == "NO" or gameChoice == "N":
+        elif gamechoice == "NO" or gamechoice == "N":
             sys.exit("That's a shame! Have a nice day")
         else:
             print("Please Answer only Yes or No")
             continue
 
-newFunc()
-
-
 
 def change():
 
-    for character in secretWord: # printing blanks for each letter in secret word
+    for character in secretWord:
         guess_word.append("-")
 
     print("Ok, so the word You need to guess has", length_word, "characters")
@@ -62,27 +54,25 @@ def change():
     print(guess_word)
 
 
-
 def guessing():
     guess_taken = 1
 
-    while guess_taken < 10:
-
+    while guess_taken < 8:
 
         guess = input("Pick a letter\n").lower()
 
-        if not guess in alphabet: #checking input
+        if not guess in alphabet:
             print("Enter a letter from a-z alphabet")
-        elif guess in letter_storage: #checking if letter has been already used
+        elif guess in letter_storage:
             print("You have already guessed that letter!")
         else:
 
             letter_storage.append(guess)
             if guess in secretWord:
                 print("You guessed correctly!")
-                for x in range(0, length_word): #This Part I just don't get it
-                    if secretWord[x] == guess:
-                        guess_word[x] = guess
+                for i in range(0, length_word):
+                    if secretWord[i] == guess:
+                        guess_word[i] = guess
                         print(guess_word)
 
                 if not '-' in guess_word:
@@ -91,8 +81,8 @@ def guessing():
             else:
                 print("The letter is not in the word. Try Again!")
                 guess_taken += 1
-                if guess_taken == 10:
-                    print(" Sorry Mate, You lost :<! The secret word was",         secretWord)
+            if guess_taken == 8:
+                print(" Sorry Mate, You lost :<! The secret word was", secretWord)
 
 
 change()
