@@ -4,7 +4,7 @@ import sys
 
 word_list = ['sphinx', 'concatenation', 'pharaoh', 'liaison', 'nugget',
              'yacht', 'conscience', 'playwright', 'nightmare', 'handkerchief']
-
+guesses = 8
 guess_word = []
 secretWord = random.choice(word_list)
 length_word = len(secretWord)
@@ -55,9 +55,9 @@ def change():
 
 
 def guessing():
-    guess_taken = 1
+    guesses = 8
 
-    while guess_taken < 8:
+    while guesses > 0:
 
         guess = input("Pick a letter\n").lower()
 
@@ -70,19 +70,20 @@ def guessing():
             letter_storage.append(guess)
             if guess in secretWord:
                 print("You guessed correctly!")
-                for i in range(0, length_word):
+                for i in range(length_word):
                     if secretWord[i] == guess:
                         guess_word[i] = guess
                         print(guess_word)
 
-                if not '-' in guess_word:
+                if '-' not in guess_word:
                     print("You won!")
                     break
             else:
                 print("The letter is not in the word. Try Again!")
-                guess_taken += 1
-            if guess_taken == 8:
-                print(" Sorry Mate, You lost :<! The secret word was", secretWord)
+                guesses -= 1
+                print(guesses)
+                if guesses < 1:
+                    print(" Sorry Mate, You lost :<! The secret word was", secretWord)
 
 
 change()
