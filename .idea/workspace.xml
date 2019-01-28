@@ -15,7 +15,7 @@
     <SUITE FILE_PATH="coverage/C_S_E$bindings.coverage" NAME="bindings Coverage Results" MODIFIED="1547745060340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes/venv/Lib/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport" />
     <SUITE FILE_PATH="coverage/C_S_E$Notes.coverage" NAME="Notes Coverage Results" MODIFIED="1547572515822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1546969394636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Hangman.coverage" NAME="Michael Alvarez - Hangman Coverage Results" MODIFIED="1548352105794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
+    <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Hangman.coverage" NAME="Michael Alvarez - Hangman Coverage Results" MODIFIED="1548438341296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Mad_Lib_Part_2.coverage" NAME="Michael Alvarez - Mad Lib Part 2 Coverage Results" MODIFIED="1546966658081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Guess_Game.coverage" NAME="Michael Alvarez - Guess Game Coverage Results" MODIFIED="1546883075542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Mad_Lib.coverage" NAME="Michael Alvarez - Mad Lib Coverage Results" MODIFIED="1546966486887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
@@ -42,19 +42,21 @@
     <session id="-210290956">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.371" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -69,12 +71,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2973" />
+          <entry key="py" value="3003" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2973" />
+          <entry key="Python" value="3003" />
         </counts>
       </usages-collector>
     </session>
@@ -84,12 +86,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="153">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1548352105700" expanded="true" signature="337:338" ph="..." />
-                <marker date="1548352105700" expanded="true" signature="1015:1021" ph="..." />
+                <marker date="1548438341232" expanded="true" signature="335:336" ph="..." />
+                <marker date="1548438341232" expanded="true" signature="1007:1013" ph="..." />
               </folding>
             </state>
           </provider>
@@ -297,13 +299,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,12 +390,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="153">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1548352105700" expanded="true" signature="337:338" ph="..." />
-            <marker date="1548352105700" expanded="true" signature="1015:1021" ph="..." />
+            <marker date="1548438341232" expanded="true" signature="335:336" ph="..." />
+            <marker date="1548438341232" expanded="true" signature="1007:1013" ph="..." />
           </folding>
         </state>
       </provider>

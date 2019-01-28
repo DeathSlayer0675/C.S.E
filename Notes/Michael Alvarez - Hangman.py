@@ -8,12 +8,12 @@ guesses = 8
 guess_word = []
 secretWord = random.choice(word_list)
 length_word = len(secretWord)
-alphabet = ("abcdefghijklmnopqrstuvwxyz")
+alphabet = "abcdefghijklmnopqrstuvwxyz"
 letter_storage = []
 
 
 def beginning():
-    print("Hello Beaner!\n")
+    print("Hello !\n")
 
     while True:
         name = input("Please enter Your name\n").strip()
@@ -61,7 +61,7 @@ def guessing():
 
         guess = input("Pick a letter\n").lower()
 
-        if not guess in alphabet:
+        if guess not in alphabet:
             print("Enter a letter from a-z alphabet")
         elif guess in letter_storage:
             print("You have already guessed that letter!")
