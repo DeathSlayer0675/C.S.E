@@ -29,5 +29,8 @@ world_map = {
             'WEST': "OFFICE"
         }
     },
-    "DINING AREA"
+    "DINING AREA": {
+        "NAME": "Dining Area"
+        "DESCRIPTION": "There are a few"
+    }
 }
