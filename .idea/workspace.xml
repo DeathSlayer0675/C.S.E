@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be75fd02-c2a0-49f1-9f1d-7dea642dd969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Notes/Object Notes.py" afterDir="false" />
-    </list>
+    <list default="true" id="be75fd02-c2a0-49f1-9f1d-7dea642dd969" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +18,7 @@
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Lucky_7_s.coverage" NAME="Michael Alvarez - Lucky 7's Coverage Results" MODIFIED="1546966305193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Dictionary_World_Map.coverage" NAME="Michael Alvarez - Dictionary World Map Coverage Results" MODIFIED="1549045852537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1546883095195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
-    <SUITE FILE_PATH="coverage/C_S_E$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1549991998999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
+    <SUITE FILE_PATH="coverage/C_S_E$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1549993570260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Hangman.coverage" NAME="Michael Alvarez - Hangman Coverage Results" MODIFIED="1548438341296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Guess_Game.coverage" NAME="Michael Alvarez - Guess Game Coverage Results" MODIFIED="1546883075542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Mad_Lib.coverage" NAME="Michael Alvarez - Mad Lib Coverage Results" MODIFIED="1546966486887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
@@ -44,7 +42,7 @@
     <session id="-210290956">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="3" />
@@ -108,7 +106,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Notes/Object Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="458">
               <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <marker date="1549993531718" expanded="true" signature="20:25" ph="..." />
@@ -478,7 +476,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Object Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="458">
           <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <marker date="1549993531718" expanded="true" signature="20:25" ph="..." />
