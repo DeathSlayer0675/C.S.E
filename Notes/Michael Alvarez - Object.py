@@ -9,5 +9,5 @@ class Computer(object):
         self.battery_left += time
         if self.battery_left > 100:
             self.battery_left = 100
-        
+
 

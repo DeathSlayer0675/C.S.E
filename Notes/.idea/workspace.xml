@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a53e884a-81e3-4f57-9298-c7797700e497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Michael Alvarez - Object.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a53e884a-81e3-4f57-9298-c7797700e497" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
     <session id="-750338453">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.opened" value="2" />
@@ -151,9 +148,9 @@
         <entry file="file://$PROJECT_DIR$/Michael Alvarez - Object.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <marker date="1550166095972" expanded="true" signature="23:28" ph="..." />
+                <marker date="1550166288174" expanded="true" signature="23:28" ph="..." />
               </folding>
             </state>
           </provider>
@@ -555,9 +552,9 @@
     <entry file="file://$PROJECT_DIR$/Michael Alvarez - Object.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <marker date="1550166095972" expanded="true" signature="23:28" ph="..." />
+            <marker date="1550166288174" expanded="true" signature="23:28" ph="..." />
           </folding>
         </state>
       </provider>
