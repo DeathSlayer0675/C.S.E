@@ -30,7 +30,7 @@ world_map = {
         }
     },
     "DINING AREA": {
-        "NAME": "Dining Area"
-        "DESCRIPTION": "There are a few"
-    }
+        "NAME": "Dining Area",
+        "DESCRIPTION": "There are a few ",
+    },
 }
