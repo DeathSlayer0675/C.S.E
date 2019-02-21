@@ -29,23 +29,18 @@ world_map = {
             'WEST': "OFFICE"
         }
     },
-    "DINING AREA": {
+    'DINING AREA': {
         "NAME": "Dining Area",
-        "DESCRIPTION": "There are a few patry hats on the tables"
+        "DESCRIPTION": "There are a few party hats on the tables"
                        "The animatronics ",
-    },
-}
-    "OFFICE": {
-            "NAME": "Security Office",
-        "DESCRIPTION": "This is the room you are in right now."
-                       "There are doors on each side of you that lead "
-                       "to the East and West hallways.",
         'PATHS': {
+            'NORTH': "SHOW_STAGE",
             'WEST': "WEST_HALLWAY",
-            'EAST': "EAST_HALLWAY"
+            'EAST': "EAST_HALLWAY",
+
         }
     },
-    'WEST_HALLWAY': {
+    "": {
         "NAME": "West Hallway",
         "DESCRIPTION": "This hallway connects the dining area to the security office"
                        "There appears to be a door to your left "
