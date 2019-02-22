@@ -40,7 +40,7 @@ world_map = {
 
         }
     },
-    "": {
+    '': {
         "NAME": "West Hallway",
         "DESCRIPTION": "This hallway connects the dining area to the security office"
                        "There appears to be a door to your left "
