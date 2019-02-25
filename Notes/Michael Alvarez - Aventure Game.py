@@ -32,7 +32,8 @@ world_map = {
     'DINING AREA': {
         "NAME": "Dining Area",
         "DESCRIPTION": "There are a few party hats on the tables"
-                       "The animatronics ",
+                       "The animatronics are standing on stage"
+        ,
         'PATHS': {
             'NORTH': "SHOW_STAGE",
             'WEST': "WEST_HALLWAY",
@@ -40,18 +41,16 @@ world_map = {
 
         }
     },
-    '': {
+    'SHOW_STAGE': {
         "NAME": "West Hallway",
         "DESCRIPTION": "This hallway connects the dining area to the security office"
                        "There appears to be a door to your left "
                        "that leads to the supply closet",
         "PATHS": {
             'NORTH': "DINING_AREA",
-            'EAST': "OFFICE",
-            'WEST': "SUPPLY_CLOSET"
         }
     },
-    'EAST_HALLWAY': {
+    '': {
         "NAME": "East Hallway",
         "DESCRIPTION": "This hallway connects the dining area "
                        "to the security office",
