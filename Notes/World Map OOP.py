@@ -1,10 +1,11 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None):
+    def __init__(self, name, description=None, north=None, south=None, east=None):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
         self.description = description
+        self.character = []
 
 class Player(object):
     def __init__(self, starting_location):
@@ -18,13 +19,15 @@ class Player(object):
         """
         self.current_location = new_location
 
-
     def find_next_room(self, direction):
-        """This method searches the current
+        """This method searches the current room to see if a room
+        exists inn that direction
+
         :param direction: The direction that you want to move to
         :return: The Room object if it exists, or None if it doesn't
         """
-        return getattr (self.current_location, direction)
+        name_of_room = getattr(self.current_location, direction)
+        return getattr(self.current_location, direction)
 
 
 # Option 1 - Define as we go
@@ -32,15 +35,16 @@ R19A = Room("Mr. Wiebe's Room")
 parking_lot = Room("Parking Lot", None, R19A)
 
 R19A.north = parking_lot
-
+"""
 # Option 2 - Set all at once, modify controller
 R19A = Room("Mr. Wiebe's Room", 'parking_lot')
 parking_lot = Room("Parking Lot", None, "R19A")
-
+"""
 player = Player(R19A)
 
+
 playing = True
-directions = ['north', 'south',' east', 'west', 'up', 'down']
+directions = ['north', 'south', ' east', 'west', 'up', 'down']
 
 while playing:
     print(player.current_location.name)
@@ -56,4 +60,3 @@ while playing:
             print("I can't go that way")
     else:
         print("Command Not Found")
-
