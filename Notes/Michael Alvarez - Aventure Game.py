@@ -38,11 +38,11 @@ world_map = {
             'NORTH': "SHOW_STAGE",
             'WEST': "WEST_HALLWAY",
             'EAST': "EAST_HALLWAY",
-
+            'SOUTH_EAST': "PIRATES_COVE"
         }
     },
     'SHOW_STAGE': {
-        "NAME": "West Hallway",
+        "NAME": "Show Stage",
         "DESCRIPTION": "This hallway connects the dining area to the security office"
                        "There appears to be a door to your left "
                        "that leads to the supply closet",
@@ -50,16 +50,16 @@ world_map = {
             'NORTH': "DINING_AREA",
         }
     },
-    '': {
+    'PIRATES_COVE': {
         "NAME": "East Hallway",
         "DESCRIPTION": "This hallway connects the dining area "
                        "to the security office",
         "PATHS": {
             'NORTH': "DINING_AREA",
-            'WEST': "OFFICE"
+
         }
     },
-    "DINING AREA": {
+    "Bean": {
         "NAME": "Dining Area",
         "DESCRIPTION": "There are a few ",
     },
