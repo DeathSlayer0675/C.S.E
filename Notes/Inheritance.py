@@ -12,7 +12,7 @@ class Car(Vehicle):
 
     def start_engine(self):
         self.engine_status = True
-        print("You turn the key and thr car turns on")
+        print("You turn the key and the car turns on")
 
     def move_forward(self):
         self.fuel -= 1
@@ -35,14 +35,16 @@ class Impala(Car):
     def __init__(self):
         super(Impala, self).__init__("Impala", 25)
 
-class KeylessCar(Car);
+
+class KeylessCar(Car):
 
     def __init__(self, name, milage):
         super(KeylessCar, self).__init__(name, milage)
 
     def start_engine(self):
         self.engine_status = True
-        print("Your push the button and the car turns on")
+        print("You push the button and the car turns on")
+
 
 jacob_car = Impala()
 jacob_car.start_engine()
