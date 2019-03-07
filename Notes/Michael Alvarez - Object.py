@@ -7,8 +7,8 @@ class PencilSharpener(object):
         self.container = 1
 
     def sharpen(self, time):
-        self.battery_left += time
-        if self.battery_left > 100:
+        self.sharpen += time
+        if self.sharpen > 100:
             self.battery_left = 100
 
     def make_call(self, duration):
@@ -36,7 +36,7 @@ class PencilSharpener(object):
         self.screen = False
 
 
-my_phone = Phone("ATT", 100)
+my_phone = PencilSharpener("ATT", 100)
 your_phone = PencilSharpener()
 default_phone = Phone("Verizon")
 

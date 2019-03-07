@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be75fd02-c2a0-49f1-9f1d-7dea642dd969" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes/Inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes/Michael Alvarez - Object.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Michael Alvarez - Object.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes/Special_Random.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,7 @@
     <session id="-210290956">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="3" />
@@ -59,7 +58,7 @@
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.34" value="3" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.371" value="1" />
@@ -75,7 +74,7 @@
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -92,13 +91,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="py" value="9759" />
+          <entry key="py" value="9834" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="9759" />
+          <entry key="Python" value="9834" />
         </counts>
       </usages-collector>
     </session>
@@ -107,14 +106,14 @@
     <favorites_list name="C.S.E" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48335856">
+    <splitter split-orientation="horizontal" split-proportion="0.4130106">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Notes/Inheritance.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+                <state relative-caret-position="884">
+                  <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
                   <folding>
                     <marker date="1551807739285" expanded="true" signature="22:27" ph="..." />
                     <marker date="1551807739285" expanded="true" signature="99:104" ph="..." />
@@ -124,11 +123,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Notes/Object Notes.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+                <state relative-caret-position="493">
+                  <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -136,8 +135,8 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Object.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
@@ -146,9 +145,13 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Items.py">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -177,12 +180,12 @@
         <option value="$PROJECT_DIR$/Notes/Michael Alvarez - Dictionary World Map.py" />
         <option value="$PROJECT_DIR$/Notes/Dictionary World Map.py" />
         <option value="$PROJECT_DIR$/Notes/Objects Notes.py" />
-        <option value="$PROJECT_DIR$/Notes/Object Notes.py" />
         <option value="$PROJECT_DIR$/Notes/World Map OOP.py" />
         <option value="$PROJECT_DIR$/Notes/Michael Alvarez - Aventure Game.py" />
         <option value="$PROJECT_DIR$/Notes/Inheritance.py" />
-        <option value="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" />
+        <option value="$PROJECT_DIR$/Notes/Object Notes.py" />
         <option value="$PROJECT_DIR$/Notes/Michael Alvarez - Object.py" />
+        <option value="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" />
       </list>
     </option>
   </component>
@@ -509,10 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <marker date="1551289432045" expanded="true" signature="296:301" ph="..." />
-            <marker date="1551289432045" expanded="true" signature="674:679" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,20 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/Object Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Items.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        <state relative-caret-position="884">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
           <folding>
             <marker date="1551807739285" expanded="true" signature="22:27" ph="..." />
             <marker date="1551807739285" expanded="true" signature="99:104" ph="..." />
@@ -545,10 +534,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Object Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Object.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
