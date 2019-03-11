@@ -36,10 +36,6 @@ class PencilSharpener(object):
         self.screen = False
 
 
-my_phone = PencilSharpener("ATT", 100)
-your_phone = PencilSharpener()
-default_phone = Phone("Verizon")
-
 my_phone.make_call(60)
 my_phone.make_call(10)
 my_phone.charge(100)
