@@ -1,8 +1,8 @@
 world_map = {
     "OFFICE": {
         "NAME": "Security Office",
-        "DESCRIPTION": "This is the room you are in right now."
-                       "There are doors on each side of you that lead "
+        "DESCRIPTION": "This is the room you are in right now. "
+                       "There are doors on each side of you that leads "
                        "to the East and West hallways.",
         'PATHS': {
             'WEST': "WEST_HALLWAY",
@@ -11,10 +11,10 @@ world_map = {
     },
     'WEST_HALLWAY': {
         "NAME": "West Hallway",
-        "DESCRIPTION": "This hallway connects the dining area to the security office"
+        "DESCRIPTION": "This hallway connects the dining area to the security office. "
                        "There appears to be a door to your left "
                        "that leads to the supply closet",
-        "PATHS": {
+        'PATHS': {
             'NORTH': "DINING_AREA",
             'EAST': "OFFICE",
             'WEST': "SUPPLY_CLOSET"
@@ -24,12 +24,12 @@ world_map = {
         "NAME": "East Hallway",
         "DESCRIPTION": "This hallway connects the dining area "
                        "to the security office",
-        "PATHS": {
+        'PATHS': {
             'NORTH': "DINING_AREA",
             'WEST': "OFFICE"
         }
     },
-    'DINING AREA': {
+    'DINING_AREA': {
         "NAME": "Dining Area",
         "DESCRIPTION": "There are a few party hats on the tables"                       
                        "The animatronics are standing on stage",
@@ -48,7 +48,7 @@ world_map = {
         "DESCRIPTION": "This hallway connects the dining area to the security office"
                        "There appears to be a door to your left "
                        "that leads to the supply closet",
-        "PATHS": {
+        'PATHS': {
             'NORTH': "DINING_AREA",
         }
     },
@@ -56,15 +56,20 @@ world_map = {
         "NAME": "East Hallway",
         "DESCRIPTION": "This hallway connects the dining area "
                        "to the security office",
-        "PATHS": {
+        'PATHS': {
             'EAST': "DINING_AREA",
         }
     },
     "RESTROOMS": {
         "NAME": "Restrooms",
         "DESCRIPTION": "There are two restrooms",
+
+        'PATHS': {
+            'WEST': "DINING_AREA"
+        }
     },
 }
+
 
 playing = True
 current_node = world_map['OFFICE']
