@@ -29,29 +29,42 @@ world_map = {
             'WEST': "OFFICE"
         }
     },
+    'SUPPLY_CLOSET': {
+        "NAME": "Supply Closet",
+        "DESCRIPTION": "There's a flashlight on the wall "
+                       "and a crow bar on the floor.",
+        'PATHS': {
+            'EAST': "WEST_HALLWAY"
+        }
+    },
     'DINING_AREA': {
         "NAME": "Dining Area",
-        "DESCRIPTION": "There are a few party hats on the tables"                       
+        "DESCRIPTION": "There are a few party hats on the tables. "                       
                        "The animatronics are standing on stage",
 
         'PATHS': {
             'NORTH': "SHOW_STAGE",
-            'NORTH_WEST': "BACKSTAGE",
-            'WEST': "WEST_HALLWAY",
-            'EAST': "EAST_HALLWAY",
-            'SOUTH_WEST': "PIRATES_COVE",
-            'SOUTH_EAST': "KITCHEN",
+            'NORTHWEST': "BACKSTAGE",
+            'EAST': "RESTROOMS",
+            'SOUTHEAST': "KITCHEN",
+            'SOUTH': "EAST_HALLWAY",
+            'SOUTHWEST': "WEST_HALLWAY",
+            'WEST': "PIRATES_COVE",
         }
     },
     'SHOW_STAGE': {
         "NAME": "Show Stage",
-        "DESCRIPTION": "This hallway connects the dining area to the security office"
-                       "There appears to be a door to your left "
-                       "that leads to the supply closet",
+        "DESCRIPTION": "There are three animatronics standing here. ",
         'PATHS': {
-            'NORTH': "DINING_AREA",
+            'WEST': "DINING_AREA",
         }
     },
+    'BACKSTAGE': {
+        "NAME": "Backstage",
+        "Description": "There appears to be an endoskeleton sitting on the table. ",
+
+    },
+
     'PIRATES_COVE': {
         "NAME": "East Hallway",
         "DESCRIPTION": "This hallway connects the dining area "
@@ -73,7 +86,8 @@ world_map = {
 
 playing = True
 current_node = world_map['OFFICE']
-directions = ['NORTH', 'EAST', 'SOUTH', 'WEST', 'UP', 'DOWN']
+directions = ['NORTH', 'NORTHEAST', 'EAST', 'SOUTHEAST', 'SOUTH',
+              'SOUTHWEST', 'WEST', 'NORTHWEST', 'UP', 'DOWN']
 
 while playing:
     print(current_node['NAME'])
