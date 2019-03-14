@@ -55,30 +55,43 @@ world_map = {
     'SHOW_STAGE': {
         "NAME": "Show Stage",
         "DESCRIPTION": "There are three animatronics standing here. ",
+
         'PATHS': {
             'WEST': "DINING_AREA",
         }
     },
+
     'BACKSTAGE': {
         "NAME": "Backstage",
         "Description": "There appears to be an endoskeleton sitting on the table. ",
-
+        'Paths': {
+            'EAST': "DINING_AREA"
+        }
     },
 
-    'PIRATES_COVE': {
-        "NAME": "East Hallway",
-        "DESCRIPTION": "This hallway connects the dining area "
-                       "to the security office",
+    "RESTROOMS": {
+            "NAME": "Restrooms",
+            "DESCRIPTION": "There are two restrooms",
+
+            'PATHS': {
+                'WEST': "DINING_AREA"
+            }
+    },
+
+    'KITCHEN': {
+        "NAME": "Kitchen",
+        "DESCRIPTION": "There is a knife in the cutting board.",
+
         'PATHS': {
             'EAST': "DINING_AREA",
         }
     },
-    "RESTROOMS": {
-        "NAME": "Restrooms",
-        "DESCRIPTION": "There are two restrooms",
-
-        'PATHS': {
-            'WEST': "DINING_AREA"
+    'PIRATES COVE': {
+            "NAME": "East Hallway",
+            "DESCRIPTION": "This hallway connects the dining area "
+                        "to the security office",
+            'PATHS': {
+                'EAST': "DINING_AREA",
         }
     },
 }
