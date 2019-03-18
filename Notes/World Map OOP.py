@@ -5,7 +5,7 @@ class Room(object):
         self.south = south
         self.east = east
         self.description = description
-        self.character = []
+
 
 class Player(object):
     def __init__(self, starting_location):

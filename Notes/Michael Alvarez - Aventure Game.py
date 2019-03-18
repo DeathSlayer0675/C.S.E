@@ -1,5 +1,5 @@
 world_map = {
-    "OFFICE": {
+    "PIZZERIA": {
         "NAME": "Security Office",
         "DESCRIPTION": "This is the room you are in right now. "
                        "There are doors on each side of you that leads "
@@ -43,8 +43,8 @@ world_map = {
                        "The animatronics are standing on stage",
 
         'PATHS': {
-            'NORTH': "SHOW_STAGE",
             'NORTHWEST': "BACKSTAGE",
+            'NORTH': "SHOW_STAGE",
             'EAST': "RESTROOMS",
             'SOUTHEAST': "KITCHEN",
             'SOUTH': "EAST_HALLWAY",
@@ -57,7 +57,7 @@ world_map = {
         "DESCRIPTION": "There are three animatronics standing here. ",
 
         'PATHS': {
-            'WEST': "DINING_AREA",
+            'SOUTH': "DINING_AREA",
         }
     },
 
@@ -70,12 +70,13 @@ world_map = {
     },
 
     "RESTROOMS": {
-            "NAME": "Restrooms",
-            "DESCRIPTION": "There are two restrooms",
+        "NAME": "Restrooms",
+        "DESCRIPTION": "There are two restrooms",
 
-            'PATHS': {
-                'WEST': "DINING_AREA"
-            }
+        'PATHS': {
+            'WEST': "DINING_AREA",
+
+        }
     },
 
     'KITCHEN': {
@@ -86,19 +87,28 @@ world_map = {
             'EAST': "DINING_AREA",
         }
     },
-    'PIRATES COVE': {
-            "NAME": "East Hallway",
-            "DESCRIPTION": "This hallway connects the dining area "
-                        "to the security office",
-            'PATHS': {
-                'EAST': "DINING_AREA",
+    'PIRATES_COVE': {
+        "NAME": "Pirates Cove",
+        "DESCRIPTION": "Foxy is rested on his stand. "
+                       "His hook and eye-patch seem detachable.",
+        'PATHS': {
+            'EAST': "DINING_AREA"
         }
-    },
+    }
 }
 
 
+class Room(object):
+    def __init__(self, name, description=True, north=None, south=None, east=None):
+        self.name = name
+        self.north = north
+        self.south = south
+        self.east = east
+        self.description = description
+
+
 playing = True
-current_node = world_map['OFFICE']
+current_node = world_map['PIZZERIA']
 directions = ['NORTH', 'NORTHEAST', 'EAST', 'SOUTHEAST', 'SOUTH',
               'SOUTHWEST', 'WEST', 'NORTHWEST', 'UP', 'DOWN']
 
