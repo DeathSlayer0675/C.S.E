@@ -1,3 +1,13 @@
+class Room(object):
+    def __init__(self, name, description=True, north=None, south=None, east=None, items=[]):
+        self.name = name
+        self.north = north
+        self.south = south
+        self.east = east
+        self.description = description
+        self.items = items
+
+
 world_map = {
     "PIZZERIA": {
         "NAME": "Security Office",
@@ -49,7 +59,7 @@ world_map = {
             'SOUTHEAST': "KITCHEN",
             'SOUTH': "EAST_HALLWAY",
             'SOUTHWEST': "WEST_HALLWAY",
-            'WEST': "PIRATES_COVE",
+            'WEST': "PIRATES_COVE"
         }
     },
     'SHOW_STAGE': {
@@ -63,7 +73,8 @@ world_map = {
 
     'BACKSTAGE': {
         "NAME": "Backstage",
-        "Description": "There appears to be an endoskeleton sitting on the table. ",
+        "Description": "There appears to be an endoskeleton "
+                       "sitting on the table. ",
         'Paths': {
             'EAST': "DINING_AREA"
         }
@@ -75,8 +86,26 @@ world_map = {
 
         'PATHS': {
             'WEST': "DINING_AREA",
+            'NORTHEAST': "M_RESTROOM",
+        }
+    },
+
+    "M_RESTROOM": {
+        "NAME": "M Restroom",
+        "DESCRIPTION": "There appears to be a hatch "
+                       "in one of the stalls",
+
+        'PATHS': {
+            'UP': "",
+            'DOWN': "",
+            'WEST': ""
 
         }
+    },
+
+    "F_RESTROOM": {
+        "NAME": "F Restroom",
+        "DESCRIPTION": "",
     },
 
     'KITCHEN': {
@@ -92,20 +121,10 @@ world_map = {
         "DESCRIPTION": "Foxy is rested on his stand. "
                        "His hook and eye-patch seem detachable.",
         'PATHS': {
-            'EAST': "DINING_AREA"
+            'EAST': "DINING_AREA",
         }
     }
 }
-
-
-class Room(object):
-    def __init__(self, name, description=True, north=None, south=None, east=None):
-        self.name = name
-        self.north = north
-        self.south = south
-        self.east = east
-        self.description = description
-
 
 playing = True
 current_node = world_map['PIZZERIA']
