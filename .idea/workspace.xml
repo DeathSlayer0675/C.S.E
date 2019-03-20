@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be75fd02-c2a0-49f1-9f1d-7dea642dd969" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Notes/Character Notes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes/Michael Alvarez - Aventure Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Michael Alvarez - Aventure Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" afterDir="false" />
@@ -20,7 +21,7 @@
     <SUITE FILE_PATH="coverage/C_S_E$Dictionary_Notes.coverage" NAME="Dictionary Notes Coverage Results" MODIFIED="1549045737989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551806898984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Mad_Lib_Part_2.coverage" NAME="Michael Alvarez - Mad Lib Part 2 Coverage Results" MODIFIED="1546966658081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
-    <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Aventure_Game.coverage" NAME="Michael Alvarez - Aventure Game Coverage Results" MODIFIED="1553011076861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
+    <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Aventure_Game.coverage" NAME="Michael Alvarez - Aventure Game Coverage Results" MODIFIED="1553098088998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Fix_it.coverage" NAME="Michael Alvarez - Fix it Coverage Results" MODIFIED="1546883063876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Lucky_7_s.coverage" NAME="Michael Alvarez - Lucky 7's Coverage Results" MODIFIED="1546966305193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
     <SUITE FILE_PATH="coverage/C_S_E$Michael_Alvarez___Dictionary_World_Map.coverage" NAME="Michael Alvarez - Dictionary World Map Coverage Results" MODIFIED="1549045852537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Notes" />
@@ -50,7 +51,7 @@
     <session id="-210290956">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="3" />
@@ -71,6 +72,7 @@
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="1" />
@@ -80,30 +82,30 @@
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="37" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="59" />
+          <entry key="py" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="58" />
+          <entry key="Python" value="60" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="py" value="11555" />
+          <entry key="py" value="11715" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="11555" />
+          <entry key="Python" value="11715" />
         </counts>
       </usages-collector>
     </session>
@@ -112,14 +114,14 @@
     <favorites_list name="C.S.E" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41225415">
+    <splitter split-orientation="horizontal" split-proportion="0.3857791">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Notes/World Map OOP.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="340">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
                 </state>
               </provider>
             </entry>
@@ -133,6 +135,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Notes/Character Notes.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="222">
+                  <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -140,8 +151,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Notes/Inheritance.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                <state relative-caret-position="341">
+                  <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
                   <folding>
                     <marker date="1551807739285" expanded="true" signature="22:27" ph="..." />
                     <marker date="1551807739285" expanded="true" signature="99:104" ph="..." />
@@ -154,8 +165,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Aventure Game.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="94" column="38" lean-forward="true" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+                <state relative-caret-position="341">
+                  <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
                 </state>
               </provider>
             </entry>
@@ -163,11 +174,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Items.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
                   <folding>
-                    <marker date="1553011564517" expanded="true" signature="41:46" ph="..." />
-                    <marker date="1553011564517" expanded="true" signature="123:177" ph="..." />
+                    <marker date="1553099562800" expanded="true" signature="41:46" ph="..." />
+                    <marker date="1553099562800" expanded="true" signature="123:176" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -204,6 +215,7 @@
         <option value="$PROJECT_DIR$/Notes/Inheritance.py" />
         <option value="$PROJECT_DIR$/Notes/World Map OOP.py" />
         <option value="$PROJECT_DIR$/Notes/Michael Alvarez - Items.py" />
+        <option value="$PROJECT_DIR$/Notes/Character Notes.py" />
         <option value="$PROJECT_DIR$/Notes/Michael Alvarez - Aventure Game.py" />
       </list>
     </option>
@@ -227,25 +239,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="C.S.E" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C.S.E" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="C.S.E" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C.S.E" type="462c0819:PsiDirectoryNode" />
-              <item name="Notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="diction&#9;null&#9;null" />
@@ -525,24 +519,17 @@
     <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Object.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/Dictionary World Map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Notes/World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="341">
+          <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
           <folding>
             <marker date="1551807739285" expanded="true" signature="22:27" ph="..." />
             <marker date="1551807739285" expanded="true" signature="99:104" ph="..." />
@@ -553,19 +540,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
-            <marker date="1553011564517" expanded="true" signature="41:46" ph="..." />
-            <marker date="1553011564517" expanded="true" signature="123:177" ph="..." />
+            <marker date="1553099562800" expanded="true" signature="41:46" ph="..." />
+            <marker date="1553099562800" expanded="true" signature="123:176" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Dictionary World Map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Character Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Michael Alvarez - Aventure Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="94" column="38" lean-forward="true" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+        <state relative-caret-position="341">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>

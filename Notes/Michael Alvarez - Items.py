@@ -5,9 +5,9 @@ class Weapon(object):
         self.name = name
 
 
-class Microphone(weapon):
+class Microphone(Weapon):
     def __init__(self):
-        self.microphone -=
+        self.microphone =
 
 
 class Food(object):
