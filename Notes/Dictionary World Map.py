@@ -1,25 +1,135 @@
 world_map = {
-    "R19A": {
-        'NAME': "Mr. Wiebe's Room",
-        'DESCRIPTION': "This is the classroom you are in right now."
-                       "There are two doors on the north wall.",
+    "PIZZERIA": {
+        "NAME": "Security Office",
+        "DESCRIPTION": "This is the room you are in right now. "
+                       "There are doors on each side of you that leads "
+                       "to the East and West hallways.",
         'PATHS': {
-            'NORTH': "PARKING_LOT"
+            'WEST': "WEST_HALLWAY",
+            'EAST': "EAST_HALLWAY"
         }
     },
-    'PARKING LOT': {
-        'NAME': "The North Parking Lot",
-        'Description': "There are a couple cars parked here.",
-        'PATHS': {
-            'SOUTH': 'R19A'
 
+    'WEST_HALLWAY': {
+        "NAME": "West Hallway",
+        "DESCRIPTION": "This hallway connects the dining area to the security office. "
+                       "There appears to be a door to your left "
+                       "that leads to the supply closet",
+        'PATHS': {
+            'NORTH': "DINING_AREA",
+            'EAST': "OFFICE",
+            'WEST': "SUPPLY_CLOSET"
+        }
+    },
+
+    'EAST_HALLWAY': {
+        "NAME": "East Hallway",
+        "DESCRIPTION": "This hallway connects the dining area "
+                       "to the security office",
+        'PATHS': {
+            'NORTH': "DINING_AREA",
+            'WEST': "OFFICE"
+        }
+    },
+
+    'SUPPLY_CLOSET': {
+        "NAME": "Supply Closet",
+        "DESCRIPTION": "There's a flashlight on the wall "
+                       "and a crow bar on the floor.",
+        'PATHS': {
+            'EAST': "WEST_HALLWAY"
+        }
+    },
+
+    'DINING_AREA': {
+        "NAME": "Dining Area",
+        "DESCRIPTION": "There are a few party hats on the tables. "                       
+                       "The animatronics are standing on stage",
+
+        'PATHS': {
+            'NORTHWEST': "BACKSTAGE",
+            'NORTH': "SHOW_STAGE",
+            'EAST': "RESTROOMS",
+            'SOUTHEAST': "KITCHEN",
+            'SOUTH': "EAST_HALLWAY",
+            'SOUTHWEST': "WEST_HALLWAY",
+            'WEST': "PIRATES_COVE"
+        }
+    },
+
+    'SHOW_STAGE': {
+        "NAME": "Show Stage",
+        "DESCRIPTION": "There are three animatronics standing here. ",
+
+        'PATHS': {
+            'SOUTH': "DINING_AREA",
+        }
+    },
+
+    'BACKSTAGE': {
+        "NAME": "Backstage",
+        "Description": "There appears to be an endoskeleton "
+                       "sitting on the table. ",
+        'Paths': {
+            'EAST': "DINING_AREA"
+        }
+    },
+
+    "RESTROOMS": {
+        "NAME": "Restrooms",
+        "DESCRIPTION": "There are two restrooms",
+
+        'PATHS': {
+            'WEST': "DINING_AREA",
+            'NORTHEAST': "M_RESTROOM",
+            'SOUTHEAST': "F_RESTROOM"
+        }
+    },
+
+    "M_RESTROOM": {
+        "NAME": "M Restroom",
+        "DESCRIPTION": "There are just stalls in here. "
+                       "What did you expect?",
+        'PATHS': {
+            'WEST': "RESTROOMS"
+
+        }
+    },
+
+    "F_RESTROOM": {
+        "NAME": "F Restroom",
+        "DESCRIPTION": "There are four stalls. "
+                       "One has a dead woman in it. "
+                       "She appears to be wearing a key around her neck. ",
+
+        'PATHS': {
+            'WEST': "RESTROOMS"
+        }
+    },
+
+    'KITCHEN': {
+        "NAME": "Kitchen",
+        "DESCRIPTION": "There is a knife in the cutting board.",
+
+        'PATHS': {
+            'EAST': "DINING_AREA",
+        }
+    },
+
+    'PIRATES_COVE': {
+        "NAME": "Pirates Cove",
+        "DESCRIPTION": "Foxy is rested on his stand. "
+                       "His hook and eye-patch seem detachable.",
+        'PATHS': {
+            'EAST': "DINING_AREA",
         }
     }
 }
 
 playing = True
-current_node = world_map['R19A']
-directions = ['NORTH', 'EAST', 'SOUTH', 'WEST', 'UP', 'DOWN']
+current_node = world_map['PIZZERIA']
+directions = ['NORTH', 'NORTHEAST', 'EAST', 'SOUTHEAST', 'SOUTH',
+              'SOUTHWEST', 'WEST', 'NORTHWEST', 'UP', 'DOWN']
 
 while playing:
     print(current_node['NAME'])

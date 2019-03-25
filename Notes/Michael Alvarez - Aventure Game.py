@@ -58,7 +58,6 @@ evil_cupcake = Weapon("Cupcake", 80)
 satan_plate = Armor("Armor of Necromancy", 40)
 
 
-
 # Characters
 orc = Character("Orc", 100, microphone, Armor("Generic Armor", 2))
 orc2 = Character("Mac", 100, evil_cupcake, satan_plate)
@@ -166,7 +165,9 @@ world_map = {
 
     "F_RESTROOM": {
         "NAME": "F Restroom",
-        "DESCRIPTION": "",
+        "DESCRIPTION": "There are four stalls. "
+                       "One has a dead woman in it. "
+                       "She appears to be wearing a key around her neck. ",
     },
 
     'KITCHEN': {
