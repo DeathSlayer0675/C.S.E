@@ -7,8 +7,7 @@ class Weapon(object):
 
 class Microphone(Weapon):
     def __init__(self):
-        self.microphone =
-
+        super(Microphone,self).__init__("Microphone")
 
 class Food(object):
     def __init__(self):

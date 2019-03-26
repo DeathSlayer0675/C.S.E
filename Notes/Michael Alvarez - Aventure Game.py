@@ -1,5 +1,6 @@
 health_level = 100
 
+
 class Room(object):
     def __init__(self, name, description=True, north=None, south=None, east=None, items=[]):
         self.name = name
@@ -55,9 +56,12 @@ class Character(object):
 # Items
 microphone = Weapon("Microphone", 60)
 evil_cupcake = Weapon("Cupcake", 80)
-satan_plate = Armor("Armor of Necromancy", 40)
-
-
+hook = Weapon("Pirate Hook", 45)
+knife = Weapon("Knife", 35)
+dragon_helm = Armor("Helmet of Pyrokinesis", 15)
+raven_plate = Armor("Chest-plate of Necromancy", 40)
+leggings = Armor("Leggings of ", 30)
+polar_boots = Armor("Boots of Permafrost", 15)
 # Characters
 orc = Character("Orc", 100, microphone, Armor("Generic Armor", 2))
 orc2 = Character("Mac", 100, evil_cupcake, satan_plate)
