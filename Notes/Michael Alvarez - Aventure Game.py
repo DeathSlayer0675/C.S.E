@@ -2,7 +2,7 @@ health_level = 100
 
 
 class Room(object):
-    def __init__(self, name, description=True, north=None, south=None, east=None, items=[]):
+    def __init__(self, name, description=True, north=None, south=None, east=None, items=True):
         self.name = name
         self.north = north
         self.south = south
@@ -54,22 +54,28 @@ class Character(object):
 
 
 # Items
+flashlight = Item("Flashlight")
+
 microphone = Weapon("Microphone", 60)
 evil_cupcake = Weapon("Cupcake", 80)
 hook = Weapon("Pirate Hook", 45)
 knife = Weapon("Knife", 35)
+torch = Weapon("Blow Torch", 50)
+magic_hat = Weapon("Magic Hat", 10-50)
 dragon_helm = Armor("Helmet of Pyrokinesis", 15)
 raven_plate = Armor("Chest-plate of Necromancy", 40)
 leggings = Armor("Leggings of ", 30)
 polar_boots = Armor("Boots of Permafrost", 15)
-# Characters
-orc = Character("Orc", 100, microphone, Armor("Generic Armor", 2))
-orc2 = Character("Mac", 100, evil_cupcake, satan_plate)
 
-orc.attack(orc2)
-orc2.attack(orc)
-orc2.attack(orc)
-orc2.attack(orc)
+# Characters
+Orc = Character("Mac", 100, microphone, Armor("Generic Armor", 2))
+Orc2 = Character("Bonnie", 100, evil_cupcake, raven_plate)
+Orc3 = Character("Chica", 100, evil_cupcake, Armor("Generic Armor", 2))
+Orc4 = Character("Endo", 100, 2, raven_plate)
+Orc5 = Character("Freddy", 100, microphone, None)
+Orc6 = Character("Foxy", 100, hook, Armor("Generic Armor", 2))
+Orc7 = Character("Nightmare Freddy", 100, microphone, magic_hat)
+Orc8 = Character("", 100, microphone, Armor("Generic Armor", 2))
 
 
 world_map = {
