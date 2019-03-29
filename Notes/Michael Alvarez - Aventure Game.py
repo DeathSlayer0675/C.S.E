@@ -2,11 +2,12 @@ health_level = 100
 
 
 class Room(object):
-    def __init__(self, name, description=True, north=None, south=None, east=None, items=True):
+    def __init__(self, name, north, east, south, west, items, description=True):
         self.name = name
         self.north = north
-        self.south = south
         self.east = east
+        self.south = south
+        self.west = west
         self.description = description
         self.items = items
 
@@ -55,7 +56,7 @@ class Character(object):
 
 # Items
 flashlight = Item("Flashlight")
-
+crowbar = Weapon("Crowbar", 20)
 microphone = Weapon("Microphone", 60)
 evil_cupcake = Weapon("Cupcake", 80)
 hook = Weapon("Pirate Hook", 45)
@@ -75,7 +76,6 @@ Orc4 = Character("Endo", 100, 2, raven_plate)
 Orc5 = Character("Freddy", 100, microphone, None)
 Orc6 = Character("Foxy", 100, hook, Armor("Generic Armor", 2))
 Orc7 = Character("Nightmare Freddy", 100, microphone, magic_hat)
-Orc8 = Character("", 100, microphone, Armor("Generic Armor", 2))
 
 
 world_map = {

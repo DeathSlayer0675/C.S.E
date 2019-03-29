@@ -1,4 +1,4 @@
-class PencilSharpener(object):
+class Sharpener(object):
     def __init__(self, sharp=True):
         self.blade = sharp
         self.plug = 1
@@ -36,11 +36,11 @@ class PencilSharpener(object):
         self.screen = False
 
 
-my_phone.make_call(60)
-my_phone.make_call(10)
-my_phone.charge(100)
-my_phone.make_call(10)
-my_phone.smash_phone()
-my_phone.make_call(1)
+Sharpener.make_call(1)
+Sharpener.make_call(2)
+Sharpener.charge(100)
+Sharpener.make_call(10)
+Sharpener.smash_phone(self)
+Sharpener.make_call(1)
 
 print(Special_Random.RandomWiebe.my_random())
