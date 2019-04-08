@@ -2,7 +2,11 @@ health_level = 100
 
 
 class Room(object):
-    def __init__(self, name, north, east, south, west, items, description=True):
+    def __init__(self, name, north, east, south, west, items=None, character=None, description=True):
+        if items is None:
+            items = []
+        if character is None:
+            character = []
         self.name = name
         self.north = north
         self.east = east
@@ -10,6 +14,7 @@ class Room(object):
         self.west = west
         self.description = description
         self.items = items
+        self.character = character
 
 
 class Player(object):
@@ -41,6 +46,7 @@ class Character(object):
         self.health = health
         self.weapon = weapon
         self.armor = armor
+        self.inventory = []
 
     def take_damage(self, damage: int):
         if self.armor.armor_amt > damage:
@@ -65,14 +71,15 @@ torch = Weapon("Blow Torch", 50)
 magic_hat = Weapon("Magic Hat", 50)
 dragon_helm = Armor("Helmet of Pyrokinesis", 15)
 raven_plate = Armor("Chest-plate of Necromancy", 40)
-leggings = Armor("Leggings of ", 30)
+leggings = Armor("Leggings of Teleportation", 30)
 polar_boots = Armor("Boots of Permafrost", 15)
+Stradivari = Weapon("Fiddle of Fire", 75)
 
 # Characters
 Orc = Character("Mac", 100, microphone, Armor("Generic Armor", 2))
-Orc2 = Character("Bonnie", 100, evil_cupcake, raven_plate)
+Orc2 = Character("Bonnie", 100, crowbar, raven_plate)
 Orc3 = Character("Chica", 100, evil_cupcake, Armor("Generic Armor", 2))
-Orc4 = Character("Endo", 100, 2, raven_plate)
+Orc4 = Character("Endo", 100, Weapon("Retractable Claws", 15*2), raven_plate)
 Orc5 = Character("Freddy", 100, microphone, None)
 Orc6 = Character("Foxy", 100, hook, Armor("Generic Armor", 2))
 Orc7 = Character("Nightmare Freddy", 100, microphone, magic_hat)
