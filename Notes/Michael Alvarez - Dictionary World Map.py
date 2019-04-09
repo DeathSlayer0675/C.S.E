@@ -12,9 +12,9 @@ world_map = {
 
     'WEST_HALLWAY': {
         "NAME": "West Hallway",
-        "DESCRIPTION": "This hallway connects the dining area to the security office. "
+        "DESCRIPTION": "This hallway connects the north dining area to the security office. "
                        "There appears to be a door to your left "
-                       "that leads to the supply closet",
+                       "that leads to the supply closet.",
         'PATHS': {
             'NORTH': "DINING_AREA",
             'EAST': "OFFICE",
@@ -24,7 +24,7 @@ world_map = {
 
     'EAST_HALLWAY': {
         "NAME": "East Hallway",
-        "DESCRIPTION": "This hallway connects the dining area "
+        "DESCRIPTION": "This hallway connects the north dining area "
                        "to the security office",
         'PATHS': {
             'NORTH': "DINING_AREA",
@@ -44,7 +44,7 @@ world_map = {
     'DINING_AREA': {
         "NAME": "Dining Area",
         "DESCRIPTION": "There are a few party hats on the tables. "                       
-                       "The animatronics are standing on stage",
+                       "The animatronics are standing on the north stage",
 
         'PATHS': {
             'NORTHWEST': "BACKSTAGE",
@@ -59,7 +59,8 @@ world_map = {
 
     'SHOW_STAGE': {
         "NAME": "Show Stage",
-        "DESCRIPTION": "There are three animatronics standing here. ",
+        "DESCRIPTION": "There are three animatronics standing here. "
+                       "The stage goes west back to the dining area.",
 
         'PATHS': {
             'SOUTH': "DINING_AREA",
@@ -69,7 +70,8 @@ world_map = {
     'BACKSTAGE': {
         "NAME": "Backstage",
         "Description": "There appears to be an endoskeleton "
-                       "sitting on the table. ",
+                       "sitting on the table. "
+                       "The east door leads back to the dining area.",
         'Paths': {
             'EAST': "DINING_AREA"
         }
@@ -77,7 +79,9 @@ world_map = {
 
     "RESTROOMS": {
         "NAME": "Restrooms",
-        "DESCRIPTION": "There are two restrooms",
+        "DESCRIPTION": "There are two restrooms. "
+                       "The mens is north-east, and the womans is south-east. "
+                       "The west door leads back to the dining area. ",
 
         'PATHS': {
             'WEST': "DINING_AREA",
