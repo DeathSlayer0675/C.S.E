@@ -10,4 +10,10 @@ class Microphone(Weapon):
         super(Microphone,self).__init__("Microphone")
 
 class Food(object):
-    def __init__(self):
+    def __init__(self,name):
+        self.name = name
+
+
+class Armor(object):
+    def __init__(self,name):
+        self.name = name

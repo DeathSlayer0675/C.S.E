@@ -76,8 +76,8 @@ polar_boots = Armor("Boots of Permafrost", 15)
 Stradivari = Weapon("Fiddle of Fire", 75)
 
 # Characters
-Orc = Character("Mac", 100, None, Armor("Generic Armor", 2))
-Orc2 = Character("Bonnie", 100, Weapon("Retractable Claws"), raven_plate)
+Orc = Character("Mac", 100, microphone, Armor("Generic Armor", 2))
+Orc2 = Character("Bonnie", 100, crowbar, raven_plate)
 Orc3 = Character("Chica", 100, evil_cupcake, Armor("Generic Armor", 2))
 Orc4 = Character("Endo", 100, Weapon("Retractable Claws", 15*2), raven_plate)
 Orc5 = Character("Freddy", 100, microphone, None)
@@ -85,13 +85,18 @@ Orc6 = Character("Foxy", 100, hook, Armor("Generic Armor", 2))
 Orc7 = Character("Nightmare Freddy", 100, microphone, magic_hat)
 
 
-
-PIZZERIA = Room("Security Office", None, None, "EAST_HALLWAY", "WEST_HALLWAY", flashlight, None,"This is the room you are in right now. "
-                                                                                                "There are doors on each side of you that leads "
-                                                                                                "to the East and West hallways.")
-
-
-    'WEST_HALLWAY' {
+world_map = {
+    "PIZZERIA": {
+        "NAME": "Security Office",
+        "DESCRIPTION": "This is the room you are in right now. "
+                       "There are doors on each side of you that leads "
+                       "to the East and West hallways.",
+        'PATHS': {
+            'WEST': "WEST_HALLWAY",
+            'EAST': "EAST_HALLWAY"
+        }
+    },
+    'WEST_HALLWAY': {
         "NAME": "West Hallway",
         "DESCRIPTION": "This hallway connects the dining area to the security office. "
                        "There appears to be a door to your left "
@@ -206,14 +211,9 @@ directions = ['NORTH', 'NORTHEAST', 'EAST', 'SOUTHEAST', 'SOUTH',
               'SOUTHWEST', 'WEST', 'NORTHWEST', 'UP', 'DOWN']
 
 while playing:
-    print(player.current_location.name)
-    print(player.current_location.description)
-
+    print(current_node['NAME'])
+    print(current_node['DESCRIPTION'])
     command = input(">_")
-    if command.lower() in short_directions:
-        pos = short_directions.index(command.lower())
-        command = directions(pos)
-
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.upper() in directions:
