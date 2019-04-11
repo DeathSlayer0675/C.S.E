@@ -2,16 +2,20 @@ health_level = 100
 
 
 class Room(object):
-    def __init__(self, name, north, east, south, west, items=None, character=None, description=True):
+    def __init__(self, name, north, northeast, east, southeast, south, southwest, west, northwest, items, character, description):
         if items is None:
             items = []
         if character is None:
             character = []
         self.name = name
         self.north = north
+        self.northeast = northeast
         self.east = east
+        self.southeast = southeast
         self.south = south
+        self.southwest = southwest
         self.west = west
+        self.northwest = northwest
         self.description = description
         self.items = items
         self.character = character
@@ -77,7 +81,7 @@ Stradivari = Weapon("Fiddle of Fire", 75)
 
 # Characters
 Orc = Character("Mac", 100, None, Armor("Generic Armor", 2))
-Orc2 = Character("Bonnie", 100, Weapon("Retractable Claws"), raven_plate)
+Orc2 = Character("Bonnie", 100, Weapon("Retractable Claws", 15*2), raven_plate)
 Orc3 = Character("Chica", 100, evil_cupcake, Armor("Generic Armor", 2))
 Orc4 = Character("Endo", 100, Weapon("Retractable Claws", 15*2), raven_plate)
 Orc5 = Character("Freddy", 100, microphone, None)
@@ -86,52 +90,29 @@ Orc7 = Character("Nightmare Freddy", 100, microphone, magic_hat)
 
 
 
-PIZZERIA = Room("Security Office", None, None, "EAST_HALLWAY", "WEST_HALLWAY", flashlight, None,"This is the room you are in right now. "
-                                                                                                "There are doors on each side of you that leads "
-                                                                                                "to the East and West hallways.")
+PIZZERIA = Room("Security Office", None, None, "EAST_HALLWAY",None,None,None, "WEST_HALLWAY",None, flashlight, None, "This is the room you are in "
+                                                                                                                     "right now. There are doors on"
+                                                                                                                     " each side of you that leads "
+                                                                                                                     "to the East and West hallways.")
 
 
-    'WEST_HALLWAY' {
-        "NAME": "West Hallway",
-        "DESCRIPTION": "This hallway connects the dining area to the security office. "
-                       "There appears to be a door to your left "
-                       "that leads to the supply closet",
-        'PATHS': {
-            'NORTH': "DINING_AREA",
-            'EAST': "OFFICE",
-            'WEST': "SUPPLY_CLOSET"
-        }
-    },
-    'EAST_HALLWAY': {
-        "NAME": "East Hallway",
-        "DESCRIPTION": "This hallway connects the dining area "
-                       "to the security office",
-        'PATHS': {
-            'NORTH': "DINING_AREA",
-            'WEST': "OFFICE"
-        }
-    },
-    'SUPPLY_CLOSET': {
-        "NAME": "Supply Closet",
-        "DESCRIPTION": "There's a flashlight on the wall "
-                       "and a crow bar on the floor.",
-        'PATHS': {
-            'EAST': "WEST_HALLWAY"
-        }
-    },
-    'DINING_AREA': {
-        "NAME": "Dining Area",
-        "DESCRIPTION": "There are a few party hats on the tables. "                       
-                       "The animatronics are standing on stage",
+WEST_HALLWAY = Room("West Hallway", "DINING_AREA", None, "OFFICE", None, None, None, "SUPPLY_CLOSET", None, None, None, "This hallway connects the dining area "
+                                                                                                                        "to the security office. "
+                                                                                                                        "There appears to be a door to your left "
+                                                                                                                        "that leads to the supply closet")
+
+EAST_HALLWAY = Room("East Hallway", "DINING_AREA", None, None, None, None, None, "OFFICE", None, None, None, "This hallway connects the dining area "
+                                                                                                             "to the security office")
+
+SUPPLY_CLOSET = Room("Supply Closet", None, None,"WEST_HALLWAY", None, None, None, None, None, crowbar, Orc4, "There's a flashlight on the wall "
+                                                                                                              "and a crow bar on the floor.")
+
+DINING_AREA = Room("Dining Area", "SHOW_STAGE", None, "RESTROOMS", "KITCHEN", "EAST_HALLWAY", "WEST_HALLWAY", "PIRATES_COVE", "BACKSTAGE", None, None, "There are a few party hats on the tables. "
+                                                                                                                                                       "The animatronics are standing on stage",
 
         'PATHS': {
             'NORTHWEST': "BACKSTAGE",
-            'NORTH': "SHOW_STAGE",
-            'EAST': "RESTROOMS",
-            'SOUTHEAST': "KITCHEN",
-            'SOUTH': "EAST_HALLWAY",
-            'SOUTHWEST': "WEST_HALLWAY",
-            'WEST': "PIRATES_COVE"
+
         }
     },
     'SHOW_STAGE': {
