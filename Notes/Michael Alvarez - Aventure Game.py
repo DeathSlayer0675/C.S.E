@@ -2,7 +2,7 @@ health_level = 100
 
 
 class Room(object):
-    def __init__(self, name, north, northeast, east, southeast, south, southwest, west, northwest, items, character, description):
+    def __init__(self, name, north, northeast, east, southeast, south, southwest, west, northwest, up, down, items, character, description):
         if items is None:
             items = []
         if character is None:
@@ -16,6 +16,8 @@ class Room(object):
         self.southwest = southwest
         self.west = west
         self.northwest = northwest
+        self.up = up
+        self.down = down
         self.description = description
         self.items = items
         self.character = character
@@ -106,67 +108,33 @@ WEST_HALLWAY = Room("West Hallway", "DINING_AREA", None, "OFFICE", None, None, N
 EAST_HALLWAY = Room("East Hallway", "DINING_AREA", None, None, None, None, None, "OFFICE", None, None, None, "This hallway connects the dining area "
                                                                                                              "to the security office")
 
-SUPPLY_CLOSET = Room("Supply Closet", None, None,"WEST_HALLWAY", None, None, None, None, None, [crowbar, flashlight], None, "There's a flashlight on the wall "
-                                                                                                              "and a crow bar on the floor.")
+SUPPLY_CLOSET = Room("Supply Closet", None, None,"WEST_HALLWAY", None, None, None, None, None, None, None, [crowbar, flashlight], None, "There's a flashlight on the wall "
+                                                                                                                                        "and a crow bar on the floor.")
 
 DINING_AREA = Room("Dining Area", "SHOW_STAGE", None, "RESTROOMS", "KITCHEN", "EAST_HALLWAY", "WEST_HALLWAY", "PIRATES_COVE", "BACKSTAGE", None, None, "There are a few party hats on the tables. "
                                                                                                                                                        "The animatronics are standing on stage")
 
-SHOW_STAGE = Room("Show Stage", None, None, None, None, "DINING_AREA", None, None, None, None,[Orc, Orc2, Orc4], "There are three animatronics standing here. ")
+SHOW_STAGE = Room("Show Stage", None, None, None, None, "DINING_AREA", None, None, None, None,[Orc, Orc2, Orc4], "There are three animatronics standing here.")
 
-BACKSTAGE = Room("Backstage", None, None, "DINING_AREA", None, None, None, None, None, None, Orc3, "There appears to be an endoskeleton "
+BACKSTAGE = Room("Backstage", None, None, "DINING_AREA", None, None, None, None, None, None, Orc3, "There appears to be an endoskeleton"
                                                                                                    "sitting on the table. ")
 
-    "RESTROOMS": {
-        "NAME": "Restrooms",
-        "DESCRIPTION": "There are two restrooms",
+RESTROOMS = Room("Restrooms", None,"M_RESTROOM", None, "F_RESTROOM", None, None, None, None, None, None, "There are two restrooms")
 
-        'PATHS': {
-            'WEST': "DINING_AREA",
-            'NORTHEAST': "M_RESTROOM",
-            'SOUTHEAST': "F_RESTROOM"
-        }
-    },
+M_RESTROOM = Room ("M Restroom", None, None, None, None, None, None, "RESTROOMS", None, None, "BASEMENT", None, None, "There appears to be a hatch "
+                                                                                                                      "in one of the stalls")
 
-    "M_RESTROOM": {
-        "NAME": "M Restroom",
-        "DESCRIPTION": "There appears to be a hatch "
-                       "in one of the stalls",
+F_RESTROOM = Room("F Restroom", None, None, None, None, None, None, None, None, None, None, None, None, "There are four stalls. "
+                                                                                                        "One has a dead woman in it. "
+                                                                                                        "She appears to be wearing a key around her neck.")
 
-        'PATHS': {
-            'DOWN': "BASEMENT",
-            'WEST': "RESTROOMS"
+KITCHEN = Room("Kitchen", None, None, "DINING_AREA", None, None, None, None, None, None, None, None, None, "There is a knife in the cutting board.")
 
-        }
-    },
-
-    "F_RESTROOM": {
-        "NAME": "F Restroom",
-        "DESCRIPTION": "There are four stalls. "
-                       "One has a dead woman in it. "
-                       "She appears to be wearing a key around her neck. ",
-    },
-
-    'KITCHEN': {
-        "NAME": "Kitchen",
-        "DESCRIPTION": "There is a knife in the cutting board.",
-
-        'PATHS': {
-            'EAST': "DINING_AREA",
-        }
-    },
-    'PIRATES_COVE': {
-        "NAME": "Pirates Cove",
-        "DESCRIPTION": "Foxy is rested on his stand. "
-                       "His hook and eye-patch seem detachable.",
-        'PATHS': {
-            'EAST': "DINING_AREA",
-        }
-    }
-}
+PIRATES_COVE = Room("Pirates Cove", None, None, "DINING_AREA", None, None, None, None, None, None, None, None, None,"Foxy is rested on his stand. "
+                                                                                                                    "His hook and eye-patch seem detachable.")
 
 playing = True
-current_node = world_map['PIZZERIA']
+current_node = ['PIZZERIA']
 directions = ['NORTH', 'NORTHEAST', 'EAST', 'SOUTHEAST', 'SOUTH',
               'SOUTHWEST', 'WEST', 'NORTHWEST', 'UP', 'DOWN']
 
@@ -178,8 +146,7 @@ while playing:
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
         command = directions(pos)
-
-    if command.lower() in ['q', 'quit', 'exit']:
+        command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.upper() in directions:
         try:
