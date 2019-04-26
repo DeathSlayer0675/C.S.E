@@ -94,32 +94,30 @@ Orc6 = Character("Nightmare Freddy", 100, [microphone, magic_hat], Armor("Exoske
 
 
 
-PIZZERIA = Room("Security Office", None, None, "EAST_HALLWAY",None,None,None, "WEST_HALLWAY",None, None, None, "This is the room you are in "
-                                                                                                               "right now. There are doors on"
-                                                                                                               " each side of you that leads "
-                                                                                                               "to the East and West hallways.")
-
+PIZZERIA = Room("Security Office", None, None, "EAST_HALLWAY",None,None,None, "WEST_HALLWAY",None, None, None, None, None, "This is the room you are in right now."
+                                                                                                                           " There are doors on each side of you that leads "
+                                                                                                                           "to the East and West hallways.")
 
 WEST_HALLWAY = Room("West Hallway", "DINING_AREA", None, "OFFICE", None, None, None, "SUPPLY_CLOSET", None, None, None, "This hallway connects the dining area "
                                                                                                                         "to the security office. "
                                                                                                                         "There appears to be a door to your left "
                                                                                                                         "that leads to the supply closet")
 
-EAST_HALLWAY = Room("East Hallway", "DINING_AREA", None, None, None, None, None, "OFFICE", None, None, None, "This hallway connects the dining area "
+EAST_HALLWAY = Room("East Hallway", "DINING_AREA", None, None, None, None, None, "OFFICE", None, None, None, "This hallway connects the dining area "  
                                                                                                              "to the security office")
 
 SUPPLY_CLOSET = Room("Supply Closet", None, None,"WEST_HALLWAY", None, None, None, None, None, None, None, [crowbar, flashlight], None, "There's a flashlight on the wall "
                                                                                                                                         "and a crow bar on the floor.")
 
-DINING_AREA = Room("Dining Area", "SHOW_STAGE", None, "RESTROOMS", "KITCHEN", "EAST_HALLWAY", "WEST_HALLWAY", "PIRATES_COVE", "BACKSTAGE", None, None, "There are a few party hats on the tables. "
-                                                                                                                                                       "The animatronics are standing on stage")
+DINING_AREA = Room("Dining Area", "SHOW_STAGE", None, "RESTROOMS", "KITCHEN", "EAST_HALLWAY", "WEST_HALLWAY", "PIRATES_COVE", "BACKSTAGE", None, None, None, None, "There are a few party hats on the tables. "
+                                                                                                                                                                   "The animatronics are standing on stage")
 
-SHOW_STAGE = Room("Show Stage", None, None, None, None, "DINING_AREA", None, None, None, None,[Orc, Orc2, Orc4], "There are three animatronics standing here.")
+SHOW_STAGE = Room("Show Stage", None, None, None, None, "DINING_AREA", None, None, None, None, None, None,[Orc, Orc2, Orc4], "There are three animatronics standing here.")
 
-BACKSTAGE = Room("Backstage", None, None, "DINING_AREA", None, None, None, None, None, None, Orc3, "There appears to be an endoskeleton"
-                                                                                                   "sitting on the table. ")
+BACKSTAGE = Room("Backstage", None, None, "DINING_AREA", None, None, None, None, None, None, None, None, Orc3, "There appears to be an endoskeleton "
+                                                                                                               "sitting on the table. ")
 
-RESTROOMS = Room("Restrooms", None,"M_RESTROOM", None, "F_RESTROOM", None, None, None, None, None, None, "There are two restrooms")
+RESTROOMS = Room("Restrooms", None,"M_RESTROOM", None, "F_RESTROOM", None, None, None, None, None, None, None, None, "There are two restrooms")
 
 M_RESTROOM = Room ("M Restroom", None, None, None, None, None, None, "RESTROOMS", None, None, "BASEMENT", None, None, "There appears to be a hatch "
                                                                                                                       "in one of the stalls")
