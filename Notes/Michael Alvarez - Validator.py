@@ -7,14 +7,27 @@
 #The check digit (the last number of the card) is the amount that you would need to add to get a multiple of 10 (Modulo 10)
 
 def validate(num: str):
+    print(num)
     if not has_16_digits(num, str):
         return False
     return False
+
+
+
+
+def has_16_digits(num,str):
+    if len(num) == 16:
+        print("16 = Y")
+        return True
 
 def take_last_digit(num, str):
     list_num = list(num)
     for index in range(len(list_num)):
         list_num.pop(15)
+
+
+
+
 
 def reverse_it(string):
     print(string[::1])
@@ -25,7 +38,7 @@ def has_16_digits(num, str):
     if len(num) == 16:
         print("16 = Y")
 
-print(valid_card_number("4712839550684070"))
+print(valid_card_number("4140606127913240"))
 list_num = list(number)
 for index in range(len(list_num)):
     list_num(index) = int(list_num[index])
