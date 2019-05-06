@@ -7,11 +7,17 @@
 # The check digit (the last number of the card) is the amount
 # that you would need to add to get a multiple of 10 (Modulo 10)
 
+Taken_out_word = []
+
+
 def validate(num: str):
     print(num)
     if not has_16_digits(num, str):
         return False
-    new_list = take_last_digit
+    new_list = take_last_digit(num)
+    reverse_it(new_list)
+    print(Taken_out_word)
+    multiply_odds(new_list)
 
 def has_16_digits(num,str):
     if len(num) == 16:
