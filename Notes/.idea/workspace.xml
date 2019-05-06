@@ -48,17 +48,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSV Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
+            <state relative-caret-position="-145" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Michael Alvarez - Validator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="646">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -343,11 +341,12 @@
       <workItem from="1556640147897" duration="1659000" />
       <workItem from="1556808750888" duration="4684000" />
       <workItem from="1556902463293" duration="2840000" />
+      <workItem from="1557157970733" duration="2470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18444000" />
+    <option name="totallyTimeSpent" value="20914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,15 +503,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CSV Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
+        <state relative-caret-position="-145" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Michael Alvarez - Validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="646">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
