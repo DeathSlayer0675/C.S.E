@@ -24,9 +24,12 @@ class Room(object):
 
 
 class Player(object):
-    def __init__(self, starting_location):
+    def __init__(self, starting_location,health_level, shield=0, weapon):
         self.current_location = starting_location
         self.inventory = []
+        self.health = health_level
+        self.shield = shield
+        self.weapon = weapon
 
 
 class Item(object):
@@ -85,12 +88,12 @@ polar_boots = Armor("Boots of Permafrost", 15)
 Stradivari = Weapon("Fiddle of Fire", 75)
 
 # Characters
-Orc = Character("Bonnie", 100, Weapon("Retractable Claws", 30), Armor("Exoskeleton", 50))
-Orc2 = Character("Chica", 100, evil_cupcake, Armor("Exoskeleton", 50))
-Orc3 = Character("Endo", 100, Weapon("Retractable Claws", 30), raven_plate)
-Orc4 = Character("Freddy", 100, microphone, Armor("Exoskeleton", 50),[microphone])
-Orc5 = Character("Foxy", 100, hook, Armor("Exoskeleton", 50),[hook])
-Orc6 = Character("Nightmare Freddy", 100, [microphone, magic_hat], Armor("Exoskeleton", 50),[])
+Orc = Character("Bonnie", 25, Weapon("Retractable Claws", 30), Armor("Exoskeleton", 50))
+Orc2 = Character("Chica", 25, evil_cupcake, Armor("Exoskeleton", 50))
+Orc3 = Character("Endo", 25, Weapon("Retractable Claws", 30), raven_plate)
+Orc4 = Character("Freddy", 25, microphone, Armor("Exoskeleton", 50),[microphone])
+Orc5 = Character("Foxy", 25, hook, Armor("Exoskeleton", 50),[hook])
+Orc6 = Character("Nightmare Freddy", 25, [microphone, magic_hat], Armor("Exoskeleton", 50),[magic_hat])
 
 
 
@@ -130,6 +133,7 @@ KITCHEN = Room("Kitchen", None, None, "DINING_AREA", None, None, None, None, Non
 
 PIRATES_COVE = Room("Pirates Cove", None, None, "DINING_AREA", None, None, None, None, None, None, None, None, None,"Foxy is rested on his stand. "
                                                                                                                     "His hook and eye-patch seem detachable.")
+player = Player('OFFICE', 100, 0, None)
 
 playing = True
 current_node = ['PIZZERIA']
@@ -141,15 +145,17 @@ while playing:
     print(player.current_location.description)
 
     command = input(">_")
+
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
         command = directions(pos)
         command.lower() in ['q', 'quit', 'exit']:
         playing = False
+
     elif command.upper() in directions:
         try:
             room_name = current_node['PATHS'][command.upper()]
-            current_node = world_map[room_name]
+            current_node = [room_name]
         except KeyError:
             print("I can't go that way")
     else:
