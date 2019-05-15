@@ -137,8 +137,10 @@ player = Player('OFFICE', 100, 0, None)
 
 playing = True
 current_node = ['PIZZERIA']
+
 directions = ['NORTH', 'NORTHEAST', 'EAST', 'SOUTHEAST', 'SOUTH',
               'SOUTHWEST', 'WEST', 'NORTHWEST', 'UP', 'DOWN']
+short_directions = [ 'n', 'ne', 'e', 'se', 's', 'sw', 'w', 'nw', 'u', 'd']
 
 while playing:
     print(player.current_location.name)
@@ -149,12 +151,12 @@ while playing:
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
         command = directions(pos)
-        command.lower() in ['q', 'quit', 'exit']:
-        playing = False
 
+        if command.lower() in ['q', 'quit', 'exit']:
+            playing = False
     elif command.upper() in directions:
         try:
-            room_name = current_node['PATHS'][command.upper()]
+            room_name = current_node['directions'][command.upper()]
             current_node = [room_name]
         except KeyError:
             print("I can't go that way")

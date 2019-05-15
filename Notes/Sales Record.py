@@ -18,14 +18,5 @@ with open("Sales Records.csv", 'r') as csv_old:
                 Total += float(row[13])
                 Divide += 1
 
-total_a = 0
-divide_a = 0
-with open("Sales Records.csv", 'r') as csv_old:
-    reader = csv.reader(csv_old)
-    for row in reader:
-        if item_type == "Cosmetics":
-            total_a += float(row[13])
-            divide_a += 1
-
 print(Total / Divide)
 print(item_list)
