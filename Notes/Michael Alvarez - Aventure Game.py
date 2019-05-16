@@ -1,5 +1,3 @@
-health_level = 100
-
 
 class Room(object):
     def __init__(self, name, north, northeast, east, southeast, south, southwest, west, northwest, up, down, items, character, description):
@@ -24,7 +22,7 @@ class Room(object):
 
 
 class Player(object):
-    def __init__(self, starting_location,health_level, shield=0, weapon):
+    def __init__(self, starting_location,health_level = 100, shield=0, weapon):
         self.current_location = starting_location
         self.inventory = []
         self.health = health_level
@@ -101,13 +99,13 @@ PIZZERIA = Room("Security Office", None, None, "EAST_HALLWAY",None,None,None, "W
                                                                                                                            " There are doors on each side of you that leads "
                                                                                                                            "to the East and West hallways.")
 
-WEST_HALLWAY = Room("West Hallway", "DINING_AREA", None, "OFFICE", None, None, None, "SUPPLY_CLOSET", None, None, None, "This hallway connects the dining area "
-                                                                                                                        "to the security office. "
-                                                                                                                        "There appears to be a door to your left "
-                                                                                                                        "that leads to the supply closet")
+WEST_HALLWAY = Room("West Hallway", "DINING_AREA", None, "OFFICE", None, None, None, "SUPPLY_CLOSET", None, None, None, None, None, "This hallway connects the dining area "
+                                                                                                                                    "to the security office. " 
+                                                                                                                                    "There appears to be a door west " 
+                                                                                                                                    "that leads to the supply closet.")
 
-EAST_HALLWAY = Room("East Hallway", "DINING_AREA", None, None, None, None, None, "OFFICE", None, None, None, "This hallway connects the dining area "  
-                                                                                                             "to the security office")
+EAST_HALLWAY = Room("East Hallway", "DINING_AREA", None, None, None, None, None, "OFFICE", None, None, None, None, None, "This hallway connects the north dining area "
+                                                                                                                         "to the security office.")
 
 SUPPLY_CLOSET = Room("Supply Closet", None, None,"WEST_HALLWAY", None, None, None, None, None, None, None, [crowbar, flashlight], None, "There's a flashlight on the wall "
                                                                                                                                         "and a crow bar on the floor.")
