@@ -2,9 +2,10 @@ class Sharpener(object):
     def __init__(self, sharp=True):
         self.blade = sharp
         self.plug = 1
-        self.size_setting = 6
+        self.size_setting =
         self.sharpen = True
         self.container = 1
+        self.power = True
 
     def sharpen(self, time):
         self.sharpen += time
@@ -22,7 +23,7 @@ class Sharpener(object):
             return
         self.battery_left -= duration * battery_loss_per_minute
         if self.battery_left < 0:
-            self.battery_left = 0
+            self. = 0
             print("Your phone dies during the conversation.")
         elif self.battery_left == 0:
             print("Your phone dies at the end of the conversation.")

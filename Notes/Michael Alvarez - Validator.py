@@ -15,9 +15,8 @@ def validate(num: str):
     if not has_16_digits(num, str):
         return False
     new_list = take_last_digit(num)
-    reverse_it(new_list)
-    print(Taken_out_word)
-    multiply_odds(new_list)
+    reversed_list = reverse_it([new_list])
+    multiply_odds(reversed_list)
 
 def has_16_digits(num,str):
     if len(num) == 16:

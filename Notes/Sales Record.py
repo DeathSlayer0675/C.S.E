@@ -62,5 +62,22 @@ with open("Sales Records.csv", 'r') as csv_old:
             if row[2] == "Cereal":
                 cereal += float(row[13])
 
-print("Fruits")
 print(item_list)
+print("------")
+print("Fruits =", fruits)
+print("Clothes =", clothes)
+print("Meat =", meat)
+print("Beverages =", beverages)
+print("Office Supplies =", office_supplies)
+print("Cosmetics =", cosmetics)
+print("Snacks =", snacks)
+print("Personal Care =", personal_care)
+print( "Household =", household)
+print("Vegetables =", vegetables)
+print("Baby food =", baby_food)
+print("Cereal =", cereal)
+
+item_type_list = [fruits, clothes, meat, beverages, office_supplies, cosmetics, snacks, personal_care, household,
+                  vegetables, baby_food, cereal]
+print("------")
+print("Highest Profit = Cosmetics,", max(item_type_list))
