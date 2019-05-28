@@ -2,9 +2,9 @@ class Sharpener(object):
     def __init__(self, sharp=True):
         self.blade = sharp
         self.plug = 1
-        self.size_setting =
+        self.size_setting = 5
         self.sharpen = True
-        self.container = 1
+        self.container = 100
         self.power = True
 
     def sharpen(self, time):
@@ -12,7 +12,7 @@ class Sharpener(object):
         if self.sharpen > 100:
             self.battery_left = 100
 
-    def make_call(self, duration):
+    def sharpen_pencil(self, duration):
         if not self.screen:
             print("You can't make a phone call.")
             print("Your screen is broken.")
@@ -34,14 +34,11 @@ class Sharpener(object):
     def smash_phone(self):
         print("SMASH!!!!!!!!!!")
         print("It broke")
-        self.screen = False
 
 
-Sharpener.make_call(1)
-Sharpener.make_call(2)
-Sharpener.charge(100)
-Sharpener.make_call(10)
-Sharpener.smash_phone(self)
-Sharpener.make_call(1)
+
+Sharpener.sharpen_pencil(10)
+Sharpener.
+Sharpener.
 
 print(Special_Random.RandomWiebe.my_random())
